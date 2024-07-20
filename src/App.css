@@ -1,0 +1,30 @@
+.renderOutput{
+    @apply overflow-hidden;
+    animation: renderOutputAnimation .75s;
+}
+
+.caret{
+    @apply w-1 h-5 relative;
+    animation: caretAnimation 1s infinite;
+}
+
+@keyframes renderOutputAnimation {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes caretAnimation {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: white;
+    }
+}
