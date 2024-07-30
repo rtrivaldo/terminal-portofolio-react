@@ -7,7 +7,6 @@ import Projects from "../projects/projects";
 import Educations from "../educations/educations";
 import Help from "../help/help";
 import Socials from "../socials/socials";
-/* import ChangeTheme from "../theme/changeTheme"; */
 
 function Form(){
     const [width, setWidth] = useState(0);
@@ -44,6 +43,8 @@ function Form(){
                     window.open("https://rtrivaldo.github.io/landscapio");
                 } else if (event.target.value === "sudo") {
                     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+                } else if (event.target.value === "repo") {
+                    window.open("https://github.com/rtrivaldo/terminal-portofolio-react");
                 }
                 
                 setInput([...input, event.target.value]);
@@ -78,7 +79,7 @@ function Form(){
             <label htmlFor="input" className="my-2 flex gap-2 cursor-text">
                 <span className="text-teal-500 font-bold">visitor@sycle.dev: ~$</span>
                 <div className="flex">
-                    <input type="text" className="bg-transparent outline-none caret-transparent min" style={{width: `${width}px`}} id="input" onChange={handleInputChange} onKeyDown={handleInput} autoFocus/>
+                    <input type="text" className="bg-transparent outline-none caret-transparent" style={{width: `${width}px`}} id="input" onChange={handleInputChange} onKeyDown={handleInput} autoFocus/>
                     <div className="caret" id="caret"/>
                 </div>
             </label>
@@ -258,15 +259,25 @@ function Form(){
                                     </Output>
                                 </>
                             );
-                            
 
+                        case "repo":
+                            return (
+                                <>
+                                    <Output key={index} className="mt-2">
+                                        <span><span className="text-teal-500 font-bold">visitor@sycle.dev: ~$ </span>{element}</span>
+                                    </Output>
+                                    <Output key="github">
+                                        <span>Opening this projects repository...</span>
+                                    </Output>
+                                </>
+                            );
+                            
                         case "theme":
                             return (
                                 <>
                                     <Output key={index} className="mt-2">
                                         <span><span className="text-teal-500 font-bold">visitor@sycle.dev: ~$ </span>{element}</span>
                                     </Output>
-                                    {/* <ChangeTheme key="theme"/> */}
                                     <Output key="github">
                                         <span>Coming soon...</span>
                                     </Output>

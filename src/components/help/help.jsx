@@ -40,6 +40,9 @@ function Help(){
                 <span><span className="text-teal-500 font-bold">projects</span>         Display my projects</span>
             </Output>
             <Output>
+                <span><span className="text-teal-500 font-bold">repo</span>             Open this porject repository</span>
+            </Output>
+            <Output>
                 <span><span className="text-teal-500 font-bold">socials</span>          Display social networks</span>
             </Output>
             <Output>
