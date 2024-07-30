@@ -34,7 +34,7 @@ function Help(){
                 <span><span className="text-teal-500 font-bold">omah</span>             Open &apos;Omah&apos; in new tab</span>
             </Output>
             <Output>
-                <span><span className="text-teal-500 font-bold">portofolio</span>       Head to my GUI portofolio</span>
+                <span><span className="text-teal-500 font-bold">portfolio</span>       Head to my GUI portfolio</span>
             </Output>
             <Output>
                 <span><span className="text-teal-500 font-bold">projects</span>         Display my projects</span>

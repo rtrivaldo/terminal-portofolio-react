@@ -31,7 +31,7 @@ function Form(){
                     window.open("https://github.com/rtrivaldo");
                 } else if (event.target.value === "email") {
                     window.open("mailto:rtrivaldo05@gmail");
-                } else if (event.target.value === "portofolio") {
+                } else if (event.target.value === "portfolio") {
                     window.open("https://rivaldotandoko.vercel.app/");
                 } else if (event.target.value === "expense-tracker") {
                     window.open("https://github.com/rtrivaldo/expense-tracker");
@@ -132,14 +132,14 @@ function Form(){
                                 </>
                             );
 
-                        case "portofolio":
+                        case "portfolio":
                             return (
                                 <>
                                     <Output key={index} className="mt-2">
                                         <span><span className="text-teal-500 font-bold">visitor@sycle.dev: ~$ </span>{element}</span>
                                     </Output>
                                     <Output key="portfolio">
-                                        <span>Opening GUI portofolio...</span>
+                                        <span>Opening GUI portfolio...</span>
                                     </Output>
                                 </>
                             );
