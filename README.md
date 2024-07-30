@@ -32,7 +32,7 @@ To view the portfolio locally, follow these steps:
 ## Inspiration and Credits
 Here are some inspiration for this kind of terminal website. Only some features and functionalities are inspired by these following websites. All codes are written on my own.
 - [Forrest](https://fkcodes.com/)
-- [Sat Naing](terminal.satnaing.dev/)
+- [Sat Naing](https://terminal.satnaing.dev/)
 
 ## Author
 - [rtrivaldo](https://rivaldotandoko.vercel.app/)
